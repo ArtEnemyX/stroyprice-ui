@@ -18,6 +18,7 @@ storiesOf('Кнопки', module)
 storiesOf('Остальное', module)
     .add('Заголовок', () => '<h1>Hello World (h1)</h1>')
     .add('Обычный текст', () => '<p class="text">Text</p>')
+    .add('Ссылка', () => '<a href="javascript:void(0)" class="link"><span class="link__cap">Hello link</span></a>')
     .add('Выпадающий список', () => '<div class="select-block">\n' +
         '            <div class="select-block__grp">\n' +
         '                <label class="select-block__label" tabIndex="-1">\n' +
