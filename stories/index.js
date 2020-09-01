@@ -16,7 +16,8 @@ storiesOf('Кнопки', module)
     .add('Ссылка как кнопка', () => '<a href="javascript:void(0)" class="link link_btn"><span class="link__cap">Hello link</span></a>', btnDesign);
 
 storiesOf('Остальное', module)
-    .add('Заголовок', () => '<h1>Hello World (h1)</h1>')
+    .add('Заголовок h1', () => '<h1>Hello World (h1)</h1>')
+    .add('Заголовок h2', () => '<h2>Hello World (h1)</h2>')
     .add('Обычный текст', () => '<p class="text">Text</p>')
     .add('Ссылка', () => '<a href="javascript:void(0)" class="link"><span class="link__cap">Hello link</span></a>')
     .add('Выпадающий список', () => '<div class="select-block">\n' +

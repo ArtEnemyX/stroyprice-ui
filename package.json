@@ -15,7 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -s ./assets"
+    "storybook": "start-storybook -s ./assets",
+    "build-storybook": "build-storybook -c .storybook -o ./dist/storybook/",
+    "chromatic": "npx chromatic --project-token jyjujmfz6"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,6 +38,7 @@
     "@babel/core": "^7.11.5",
     "@storybook/html": "^6.0.21",
     "babel-loader": "^8.1.0",
+    "chromatic": "^5.1.0",
     "storybook-addon-designs": "^5.4.1"
   }
 }
