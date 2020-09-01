@@ -15,12 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -s ./assets",
-    "build-storybook": "build-storybook -c .storybook -o ./dist/storybook/",
+    "storybook": "start-storybook -s ./assets/css,./assets/js",
+    "build-storybook": "build-storybook -c .storybook -o ./dist/storybook/ -s ./assets/css,./assets/js",
     "chromatic": "npx chromatic --project-token jyjujmfz6"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
