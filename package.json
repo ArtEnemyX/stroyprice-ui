@@ -17,7 +17,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -s ./assets/css,./assets/js",
     "build-storybook": "build-storybook -c .storybook -o ./dist/storybook/ -s ./assets/css,./assets/js",
-    "chromatic": "npx chromatic --project-token jyjujmfz6"
+    "chromatic": "npx chromatic --project-token jyjujmfz6 --exit-zero-on-changes --auto-accept-changes"
   },
   "browserslist": {
     "production": [
