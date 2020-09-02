@@ -1,9 +1,10 @@
 name: "Chromatic"
-on: push
-  paths:
-    - '.github/workflows/chromatic.yml'
-    - 'assets/**'
-    - 'stories/**'
+on:
+  push:
+    paths:
+      - '.github/workflows/chromatic.yml'
+      - 'assets/**'
+      - 'stories/**'
 
 jobs:
   chromatic:
