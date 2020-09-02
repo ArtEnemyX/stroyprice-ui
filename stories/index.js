@@ -2,18 +2,17 @@
 import {storiesOf} from '@storybook/html';
 import {withDesign} from 'storybook-addon-designs'
 
-let btnDesign = {
+let designParams = {
     design: {
         type: 'figma',
-        url:
-            'https://www.figma.com/file/kuXOOnLDbWwUC8lG6wESVf/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9-2020?node-id=908%3A3',
-    },
+        url: 'https://www.figma.com/file/kuXOOnLDbWwUC8lG6wESVf/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9-2020?node-id=908%3A3',
+    }
 };
 
 storiesOf('Кнопки', module)
     .addDecorator(withDesign)
-    .add('Обычная кнопка', () => '<button class="btn" type="button"><span class="btn__cap">Текст кнопки</span></button>', btnDesign)
-    .add('Ссылка как кнопка', () => '<a href="javascript:void(0)" class="link link_btn"><span class="link__cap">Hello link</span></a>', btnDesign);
+    .add('Обычная кнопка', () => '<button class="btn" type="button"><span class="btn__cap">Текст кнопки</span></button>', designParams)
+    .add('Ссылка как кнопка', () => '<a href="javascript:void(0)" class="link link_btn"><span class="link__cap">Hello link</span></a>', designParams);
 
 storiesOf('Остальное', module)
     .add('Заголовок h1', () => '<h1>Hello World (h1)</h1>')
