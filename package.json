@@ -4,32 +4,12 @@
   "private": true,
   "dependencies": {
     "@storybook/addon-docs": "^6.1.0-alpha.1",
-    "@storybook/addons": "^6.0.21",
-    "cra-template": "1.0.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "@storybook/addons": "^6.0.21"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -s ./assets/css,./assets/js",
     "build-storybook": "build-storybook -c .storybook -o ./dist/storybook/ -s ./assets/css,./assets/js",
-    "chromatic": "npx chromatic --project-token jyjujmfz6 --exit-zero-on-changes --auto-accept-changes"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "chromatic": "npx chromatic --project-token jyjujmfz6 --exit-zero-on-changes --auto-accept-changes --exit-once-uploaded"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
